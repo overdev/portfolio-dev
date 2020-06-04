@@ -6,12 +6,13 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { BioComponent } from './bio/bio.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { ContatoComponent } from './contato/contato.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HabilidadesComponent,
+    component: HomeComponent,
   },
   {
     path: 'habilidades',
@@ -36,6 +37,14 @@ const routes: Routes = [
   {
     path: 'contato',
     component: ContatoComponent,
+  },
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: '**',
+    component: HomeComponent
   },
 ];
 
